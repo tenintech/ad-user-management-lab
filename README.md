@@ -1,66 +1,52 @@
-<p align="center">
-  <img width="300" height="168" alt="Active Directory Img" src="https://github.com/user-attachments/assets/097a297f-965d-4a93-831b-b57084f29a92" />
+<h1>Group Policy & Shared Drive Lab</h1>
 
-# deploying-ad
-Using Server Manager to Add Roles and Features 
-<img width="1849" height="994" alt="1using server manager to add roles and features" src="https://github.com/user-attachments/assets/a51231e9-cfdd-4847-803a-1728e51b7956" />
-Active Directory User Management Lab
+  Objective
 
-#Objective
-
-Simulate common help desk tasks involving user accounts.
-
+Deploy shared resources and company policies using Group Policy.
 
 Technologies / Environments Used
+Active Directory
+Group Policy Management
+Windows Server File Share
+Domain client
+Lab Steps
+Step 1 — Create Shared Folder
 
-  
-   - Active Directory
+On the server create:
 
-   - Windows Server
+CompanyShare
 
-   - Domain-joined Windows client
-  
-   - PowerShell (optional)
+Share path:
 
-<h2>Lab Steps</h2>
+\\DC01\CompanyShare
+Step 2 — Configure Permissions
 
+Grant access to:
 
-  <b>Step 1 — Create Users<b>
+Domain Users
+Specific groups
+Step 3 — Create Group Policy
 
+Open Group Policy Management.
 
-  Open Active Directory Users and Computers.
+Create new policy:
 
-  Create users:
+Map Network Drive
+Step 4 — Map Network Drive
 
-John Smith
-Sarah Davis
-Alex Chen
+Navigate to:
+User Configuration → Preferences → Drive Maps
 
-Place them in different OUs.
+Configure:
+Drive letter:
 
-<b>Step 2 — Create Security Groups<b>
+Z:
+Step 5 — Test Policy
 
-Create groups:
+Login to a domain client and confirm:
 
-IT Support
-HR Team
-Finance Team
-
-Add users to groups.
-
-<b>Step 3 — Simulate Help Desk Tasks<b>
-
-Perform:
-
-Reset password
-Unlock account
-Disable account
-Enable account
-Update user information
-Step 4 — Test Login
-
-Log into the domain client using test accounts.
-
+Drive appears
+Access works
 Outcome
 
-Demonstrated real help desk account support tasks.
+Shared company drive deployed using Group Policy.
