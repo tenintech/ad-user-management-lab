@@ -1,7 +1,7 @@
-<h1>Preparing Active Directory Infrastructure in Microsoft Azure</h1>
+<h1>Install Active Directory Domain Services</h1>
 <h2>Objective</h2>
-This project demonstrates the deployment of an on-premises-style Active Directory infrastructure using Microsoft Azure Virtualization. The lab walks through creating a Domain Contoller and a client machine on a Virtual Network, configuring network connectivity, and implementing the required Domain Name Service settings to support Active Directory Domain Services.  
-<img width="799" height="891" alt="Screenshot 2026-03-23 195750" src="https://github.com/user-attachments/assets/60595e1c-e055-4b46-a273-c6e0c373ca93" />
+This project shows the installation of Active Directory on the Domain Server. It walks through the steps of joining the Virtual Machine to the domain, using Active Directory Uses and Computers (ADUC) to create an Organizatinal Unit, create users and practice log ins.
+
 
 <h2>Technologies/Environments Used</h2>
   
@@ -25,16 +25,18 @@ This project demonstrates the deployment of an on-premises-style Active Director
 
 <h2>Step-by-Step Walkthrough</h2>
 
-<h3>1. Create the Domain Controller Virtual Machine</h3>
+<h3>1. Install Active Directory Domain Services onto the Domain Controller</h3>
 
-Within Microsoft Azure, deploy a Windows Server Virtual Machine that will serve as the Domain Controller.
+Open Server Manager on the Domain Contoller and install AD DS.
+Promote Server to Domain Controller
 
 Configuration:
 - Virtual Machine Name: DC1
 - Image: Windows Server 2025
 - Virtual Network: Same network that will be used by the client machine
 
-<img width="900" height="1000" alt="Created Domain Controller VM" src="https://github.com/user-attachments/assets/2e95058d-039e-450f-80d1-d68e1015592e" />
+<img width="1567" height="905" alt="1using server manager to add roles and features" src="https://github.com/user-attachments/assets/6488dae0-df73-424a-bb89-20e2e548e887" />
+
 
 <hr />
 
@@ -49,7 +51,7 @@ Configuration:
 - Image: Windows 10 Enterprise
 - Virtual Network: Same VNet as the Domain Controller
 
-<img width="1920" height="1080" alt="Created Client VM" src="https://github.com/user-attachments/assets/f1cfc3f4-1d6a-4dad-88f2-5dd9b40c8fe1" />
+<<img width="772" height="896" alt="Screenshot 2026-03-23 211626" src="https://github.com/user-attachments/assets/94a7bd43-a2d9-46c1-ae0b-67f3b21fb85d" />/>
 
 <hr />
 
