@@ -2,13 +2,14 @@
 <img width="300" height="168" alt="Active Directory Img" src="https://github.com/user-attachments/assets/e9927977-2cd2-42b1-8398-85ac11f0b461" />
 
 <h1> Active Directory Deployment and User Management</h1>
+This lab is part of my hands-on IT support and cloud infrastructure training portfolio.
 <h2>Objective</h2>
-This project shows the installation of Active Directory on the Domain Server. It walks through the steps of joining the Virtual Machine to the domain, using Active Directory Uses and Computers (ADUC) to create an Organizatinal Unit, create users and practice log ins.
+This project shows the installation of Active Directory on the Domain Server. It walks through the steps of joining the Virtual Machine to the domain, using Active Directory Users and Computers (ADUC) to create an Organizational Unit, create users and practice log ins.
 
 
 <h2>Technologies/Environments Used</h2>
   
-  - Microsoft Azure(Virtual Machines, Vitual Network)
+  - Microsoft Azure(Virtual Machines, Virtual Network)
     
        - Windows Server 2025 (Domain Controller)
  
@@ -30,7 +31,7 @@ This project shows the installation of Active Directory on the Domain Server. It
 
 <h3>1. Install Active Directory Domain Services onto the Domain Controller</h3>
 
-Open Server Manager on the Domain Contoller and install AD DS.
+Open Server Manager on the Domain Controller and install AD DS.
 Promote Server to Domain Controller
 
 Configuration:
@@ -100,43 +101,53 @@ This show A working Active Directory domain environment with a connected client 
 
 <br />
 
-<h3>5. Configure Client DNS Settings</h3>
+<h3>5. Create Additional Domain Users</h3>
 
-Set the DNS server of the client virtual machine (Client1) to point to the private IP address of the Domain Controller (DC1).
+Open Active Directory Users and Computers (ADUC).
 
-This allows the client machine to locate and authenticate with the domain once Active Directory is installed.
+Navigate to the Organizational Unit:
+_EMPLOYEES
 
-<img width="1076" height="996" alt="Changing DNS Settings on Client VM" src="https://github.com/user-attachments/assets/64087d13-0377-48f8-8104-4e5e3fd8c581" />
+Create several test users to simulate a real company environment.
+
+Example users:
+- John Smith
+- Sarah Davis
+- Alex Chen
+
+Verify the users appear in the OU.
+
+<img src="ADD USER SCREENSHOT HERE">
 
 <hr />
 
 <br />
 
-<h3>6. Test Network Connectivity</h3>
+<h3>6. Configure Basic Group Policy</h3>
 
-Open PowerShell on Client1 and test connectivity to the Domain Controller using the ping command.
+Open Group Policy Management.
 
-Use:
-ping 10.0.0.4
+Create a new Group Policy Object (GPO) to apply basic domain settings.
 
-Then verify DNS configuration using:
-ipconfig /all
+Example configuration:
+- Password policy
+- Account lockout policy
+- Desktop restrictions
 
-This confirms that the client machine is using the Domain Controller as its DNS server.
+Link the policy to the appropriate Organizational Unit.
 
-<img width="951" height="967" alt="Successful Ping Test" src="https://github.com/user-attachments/assets/e72a658e-4c85-41d4-ab91-57dc85b4d0e8" />
+Verify the policy applies to domain users.
 
-<img width="1080" height="925" alt="DNS Configuration Confirmation" src="https://github.com/user-attachments/assets/80e8d3d8-04b1-43d2-91d9-876d1890156b" />
-
-<hr />
+<img src="GPO SCREENSHOT HERE">
 
 ## What I Learned
-During this lab I learned how important DNS configuration is when setting up Active Directory in Azure. This is necessary so that the users computers don't go looking out on the world wide web but get their information from inside the domain. 
+Once the server is promoted to a domain controller that changes the dynamic. Now users can sign on and be local users or sign on as domain users. It becomes necessary when you log in to specify how you want to interact with the domain. 
 
 <h2>⏭️Next Steps</h2>
 
 In the next phase of this lab I'll:
-- Install Active Directory Domain Services (AD DS)
-- Promote the server to a Domain Controller
-- Join Client1 to the domain
-- Create test user accounts
+- Implement Group Policy Objects (GPO)
+- Create additional users in the _EMPLOYEES OU
+- Test domain logins from Client1
+- Configure password policies
+- Simulate help desk tasks such as password resets and account unlocks
