@@ -154,24 +154,28 @@ To simulate a managed work environment, a desktop restriction policy was created
 
 Steps:
 - Open Group Policy Management
-- Edit the existing Group Policy Object
+- Right Click Group Policy Objects 
+- Create New GPO
+      - Name: Desktop Restrictions Policy
 - Navigate to:
 
 User Configuration → Administrative Templates → Control Panel
+<img width="713" height="406" alt="EnablingDesktopRestrictions" src="https://github.com/user-attachments/assets/6b9ac319-26ee-489b-8e4e-3dc8b815393b" />
+
 
 Enable the policy:
-Prohibit access to Control Panel and PC settings
+Remove Computer Icon, Properties and Recycle Bin Icon
 
 Apply the policy to the _EMPLOYEES Organizational Unit.
 
-<img src="ADD CONTROL PANEL GPO SCREENSHOT HERE">
+<img width="655" height="409" alt="linkpolicyto OU" src="https://github.com/user-attachments/assets/9dc1ba05-1e47-4f93-af73-ae37bc03c171" />
 
 Test the policy:
 - Log into Client1 as a standard user
-- Attempt to open Control Panel
+- Observe the absence of icons and properties menu.
 
 Result:
-Access to Control Panel is restricted by the Group Policy.
+Icons no longer visible
 
 ## What I Learned
 Once the server is promoted to a Domain Controller, it changes how users authenticate within the environment. Now users can sign on and be local users, or sign on as domain users. It becomes necessary when you log in to specify how you want to interact with the domain. 
