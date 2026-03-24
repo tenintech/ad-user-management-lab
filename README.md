@@ -73,7 +73,7 @@ Create the following Organizational Units (OU):
 
 - _EMPLOYEES
 - _ADMINS
-- 
+  
 Add user to _ADMINS OU 
 User Name: Jane Doe 
 
