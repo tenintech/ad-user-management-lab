@@ -1,4 +1,7 @@
-<h1>Install Active Directory Domain Services</h1>
+
+<img width="300" height="168" alt="Active Directory Img" src="https://github.com/user-attachments/assets/e9927977-2cd2-42b1-8398-85ac11f0b461" />
+
+<h1> Active Directory Deployment and User Management</h1>
 <h2>Objective</h2>
 This project shows the installation of Active Directory on the Domain Server. It walks through the steps of joining the Virtual Machine to the domain, using Active Directory Uses and Computers (ADUC) to create an Organizatinal Unit, create users and practice log ins.
 
@@ -36,33 +39,46 @@ Configuration:
 - Virtual Network: Same network that will be used by the client machine
 
 <img width="1567" height="905" alt="1using server manager to add roles and features" src="https://github.com/user-attachments/assets/6488dae0-df73-424a-bb89-20e2e548e887" />
+<img width="1361" height="611" alt="2choose server" src="https://github.com/user-attachments/assets/c8863979-0800-491b-84f1-5738eee5efcb" />
 
 
 <hr />
 
 <br />
 
-<h3>2. Create the Client Virtual Machine</h3>
+<h3>2. Promote Server to a Domain Controller</h3>
 
-Create another Windows Virtual Machine that will act as a client computer in the domain.
+Set up a new forest.
 
 Configuration:
-- Virtual Machine Name: Client1
-- Image: Windows 10 Enterprise
-- Virtual Network: Same VNet as the Domain Controller
+- Root domain name: domain.local
+- Functional Level of Forest and Domain: Windows Server 2025
 
-<<img width="772" height="896" alt="Screenshot 2026-03-23 211626" src="https://github.com/user-attachments/assets/94a7bd43-a2d9-46c1-ae0b-67f3b21fb85d" />/>
+<img width="939" height="480" alt="5add new forest" src="https://github.com/user-attachments/assets/a5f020dd-79da-4749-8db1-98cf94249da1" />
+
+<img width="1210" height="809" alt="4promote server to domain controller" src="https://github.com/user-attachments/assets/aaf346b7-e869-4004-974e-3b7dce2bff98" />
+
+<img width="772" height="896" alt="Screenshot 2026-03-23 211626" src="https://github.com/user-attachments/assets/94a7bd43-a2d9-46c1-ae0b-67f3b21fb85d" />
 
 <hr />
 
 <br />
 
-<h3>3. Configure a Static Private IP Address for the Domain Controller</h3>
+<h3>3. Create a Domain Admin user within the domain</h3>
 
-Set the Domain Controller's Network Interface Card (NIC) to use a static private IP address.  
-This ensures the IP address does not change and allows the client machine to reliably use the Domain Controller as its DNS server.
+Open up Active Directory Users and Computers(ADUC) and create 2 Organizational Units (OU)
 
-<img width="1920" height="1080" alt="Configuring Static IP Address" src="https://github.com/user-attachments/assets/129a2b34-0409-4c4b-b4f2-437b7fc79510" />
+Configuration: 
+Organization Units: _EMPLOYEES 
+                    _ADMINS
+Add user to _ADMINS OU 
+User Name: Jane Doe 
+
+Make User an Admin user adding user to built in admin security group "Domain Admins"
+<img width="1113" height="372" alt="11adding user to built in domain admins sec group" src="https://github.com/user-attachments/assets/c1bccb9e-b9bd-4f68-8ded-3dc9e9493fb6" />
+
+<img width="1289" height="869" alt="10 create user in ADUC" src="https://github.com/user-attachments/assets/5351520b-bf57-45c0-ae62-f10dc6929f5b" />
+
 
 <hr />
 
