@@ -69,9 +69,11 @@ Configuration:
 
 Open up Active Directory Users and Computers(ADUC) and create 2 Organizational Units (OU)
 
-Create: 
-Organization Units: _EMPLOYEES 
-                    _ADMINS
+Create the following Organizational Units (OU):
+
+- _EMPLOYEES
+- _ADMINS
+- 
 Add user to _ADMINS OU 
 User Name: Jane Doe 
 
@@ -95,7 +97,7 @@ Verify that user is visible in the domain in Computers
 
 <img width="1065" height="561" alt="15client1 computer visible from DC" src="https://github.com/user-attachments/assets/7015fd30-53e5-4659-a3c5-eb301d67b8b0" />
 
-This show A working Active Directory domain environment with a connected client computer.
+This demonstrates a working Active Directory domain environment with a connected client computer.
 
 <hr />
 
@@ -138,14 +140,41 @@ Link the policy to the appropriate Organizational Unit.
 Verify the policy applies to domain users.
 
 <img width="1223" height="834" alt="19using GPMC to create GPO for Password Threshold" src="https://github.com/user-attachments/assets/d99b1fe3-fadc-4506-8a83-f57fc6c54e9b" />
-<img width="1617" height="550" alt="20Editing Account Lockout Policy in GPMC" src="https://github.com/user-attachments/assets/392f4fc3-6d86-43ea-af4c-9a82efa89700" />
 
-After setting the password threshold I attempted to login with the wrong password was locked out of the account and had to update password to log on again. 
+After setting the password threshold I attempted to login as user "bot.vug" with the wrong password 10 times and was locked out of the account. 
+Unlock the account
+Reset the password
+
 
 <img width="1235" height="902" alt="23Unlocking user account" src="https://github.com/user-attachments/assets/2ac6be79-4175-45c7-a1d2-8642f4e9a1d0" />
 
+<h4>Apply a Desktop Restriction Policy</h4>
+
+To simulate a managed work environment, a desktop restriction policy was created to prevent standard users from accessing the Control Panel and system settings.
+
+Steps:
+- Open Group Policy Management
+- Edit the existing Group Policy Object
+- Navigate to:
+
+User Configuration → Administrative Templates → Control Panel
+
+Enable the policy:
+Prohibit access to Control Panel and PC settings
+
+Apply the policy to the _EMPLOYEES Organizational Unit.
+
+<img src="ADD CONTROL PANEL GPO SCREENSHOT HERE">
+
+Test the policy:
+- Log into Client1 as a standard user
+- Attempt to open Control Panel
+
+Result:
+Access to Control Panel is restricted by the Group Policy.
+
 ## What I Learned
-Once the server is promoted to a domain controller that changes the dynamic. Now users can sign on and be local users or sign on as domain users. It becomes necessary when you log in to specify how you want to interact with the domain. 
+Once the server is promoted to a Domain Controller, it changes how users authenticate within the environment. Now users can sign on and be local users, or sign on as domain users. It becomes necessary when you log in to specify how you want to interact with the domain. 
 
 <h2>⏭️Next Steps</h2>
 
