@@ -1,4 +1,4 @@
-
+<p align="center">
 <img width="300" height="168" alt="Active Directory Img" src="https://github.com/user-attachments/assets/e9927977-2cd2-42b1-8398-85ac11f0b461" />
 
 <h1> Active Directory Deployment and User Management</h1>
