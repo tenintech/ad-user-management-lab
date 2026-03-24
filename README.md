@@ -150,7 +150,7 @@ Reset the password
 
 <h4>Apply a Desktop Restriction Policy</h4>
 
-To simulate a managed work environment, a desktop restriction policy was created to prevent standard users from accessing the Control Panel and system settings.
+To simulate a managed work environment, a desktop restriction policy was created to prevent standard users from accessing certain icons on the desktop and system settings.
 
 Steps:
 - Open Group Policy Management
@@ -159,7 +159,7 @@ Steps:
       - Name: Desktop Restrictions Policy
 - Navigate to:
 
-User Configuration → Administrative Templates → Control Panel
+User Configuration → Administrative Templates → Desktop
 <img width="713" height="406" alt="EnablingDesktopRestrictions" src="https://github.com/user-attachments/assets/6b9ac319-26ee-489b-8e4e-3dc8b815393b" />
 
 
@@ -179,6 +179,7 @@ Icons no longer visible
 
 ## What I Learned
 Once the server is promoted to a Domain Controller, it changes how users authenticate within the environment. Now users can sign on and be local users, or sign on as domain users. It becomes necessary when you log in to specify how you want to interact with the domain. 
+There are a seemingly infinite amount of things you can enable and disable in Group Policy Management. 
 
 <h2>⏭️Next Steps</h2>
 
