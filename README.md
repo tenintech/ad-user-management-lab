@@ -68,7 +68,7 @@ Configuration:
 
 Open up Active Directory Users and Computers(ADUC) and create 2 Organizational Units (OU)
 
-Configuration: 
+Create: 
 Organization Units: _EMPLOYEES 
                     _ADMINS
 Add user to _ADMINS OU 
@@ -84,20 +84,17 @@ Make User an Admin user adding user to built in admin security group "Domain Adm
 
 <br />
 
-<h3>4. Connect to the Domain Controller Using Remote Desktop</h3>
+<h3>4. Join Client1 to the Domain</h3>
 
-Log into the Domain Controller (DC1) using Remote Desktop Protocol (RDP).
+Log into Client1 (VM) and in System Settings make a member of domain.local 
+Verify that user is visible in the domain in Computers 
 
-To verify connectivity between machines, temporarily disable the firewall and allow ICMP traffic for testing.
 
-Run:
-wf.msc
+<img width="1920" height="966" alt="12making client1 member of domain" src="https://github.com/user-attachments/assets/0a78a265-70d2-4030-8ea2-824dcef27713" />
 
-This opens the Windows Defender Firewall management console.
+<img width="1065" height="561" alt="15client1 computer visible from DC" src="https://github.com/user-attachments/assets/7015fd30-53e5-4659-a3c5-eb301d67b8b0" />
 
-<img width="1920" height="1080" alt="Connecting via Remote Desktop" src="https://github.com/user-attachments/assets/e8894acc-6bb7-4411-bba3-00da07647754" />
-
-<img width="1272" height="984" alt="Disabling Firewall for Testing" src="https://github.com/user-attachments/assets/0fb3ecf4-b5db-47c4-98de-aa5da97eb6a3" />
+This show A working Active Directory domain environment with a connected client computer.
 
 <hr />
 
