@@ -108,16 +108,15 @@ Open Active Directory Users and Computers (ADUC).
 Navigate to the Organizational Unit:
 _EMPLOYEES
 
-Create several test users to simulate a real company environment.
+Open Powershell and use a script to Create several test users to simulate a real company environment.
 
-Example users:
-- John Smith
-- Sarah Davis
-- Alex Chen
+Example user:
+- bot.vug
+
 
 Verify the users appear in the OU.
 
-<img src="ADD USER SCREENSHOT HERE">
+<img width="1755" height="908" alt="17using powershell to create users" src="https://github.com/user-attachments/assets/9a7056c1-c6d2-49f1-ad24-1b585755578a" />
 
 <hr />
 
@@ -138,7 +137,12 @@ Link the policy to the appropriate Organizational Unit.
 
 Verify the policy applies to domain users.
 
-<img src="GPO SCREENSHOT HERE">
+<img width="1223" height="834" alt="19using GPMC to create GPO for Password Threshold" src="https://github.com/user-attachments/assets/d99b1fe3-fadc-4506-8a83-f57fc6c54e9b" />
+<img width="1617" height="550" alt="20Editing Account Lockout Policy in GPMC" src="https://github.com/user-attachments/assets/392f4fc3-6d86-43ea-af4c-9a82efa89700" />
+
+After setting the password threshold I attempted to login with the wrong password was locked out of the account and had to update password to log on again. 
+
+<img width="1235" height="902" alt="23Unlocking user account" src="https://github.com/user-attachments/assets/2ac6be79-4175-45c7-a1d2-8642f4e9a1d0" />
 
 ## What I Learned
 Once the server is promoted to a domain controller that changes the dynamic. Now users can sign on and be local users or sign on as domain users. It becomes necessary when you log in to specify how you want to interact with the domain. 
