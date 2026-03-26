@@ -74,7 +74,7 @@ User Name: Jane Doe
 
 <br />
 
-Make User an Admin user adding user to built in admin security group "Domain Admins"
+Made "Jane Doe" an Admin user adding to built in admin security group "Domain Admins"
 
 <br />
 <img width="1113" height="372" alt="11adding user to built in domain admins sec group" src="https://github.com/user-attachments/assets/c1bccb9e-b9bd-4f68-8ded-3dc9e9493fb6" />
@@ -88,8 +88,8 @@ Make User an Admin user adding user to built in admin security group "Domain Adm
 
 <h3>4. Join Client1 to the Domain</h3>
 
-Log into Client1 (VM) and in System Settings make a member of domain.local 
-Verify that user is visible in the domain in Computers 
+Logged into Client1 (VM) and in System Settings made a member of domain.local 
+Verified that user is visible in the domain in Computers 
 
 
 <img width="1920" height="966" alt="12making client1 member of domain" src="https://github.com/user-attachments/assets/0a78a265-70d2-4030-8ea2-824dcef27713" />
@@ -104,18 +104,14 @@ This demonstrates a working Active Directory domain environment with a connected
 
 <h3>5. Create Additional Domain Users</h3>
 
-Open Active Directory Users and Computers (ADUC).
 
-Navigate to the Organizational Unit:
-_EMPLOYEES
-
-Open Powershell and use a script to Create several test users to simulate a real company environment.
+Opened Powershell used a script to automatically Create several test users to simulate a real company environment.
 Notice path of script.
 
 
 <img width="1755" height="908" alt="17using powershell to create users" src="https://github.com/user-attachments/assets/56175b86-efa4-474d-833c-112639062b22" />
 
-Verify the users appear in the OU.
+Verified the users appear in the OU.
 
 <img width="549" height="425" alt="uses in employees ou" src="https://github.com/user-attachments/assets/23c93407-2c02-44a0-9714-4c09aae8469c" />
 
