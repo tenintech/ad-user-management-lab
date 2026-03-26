@@ -4,7 +4,7 @@
 <h1> Active Directory Deployment and User Management</h1>
 This lab is part of my hands-on IT support and cloud infrastructure training portfolio.
 <h2>Objective</h2>
-This project shows the installation of Active Directory on the Domain Server. It walks through the steps of joining the Virtual Machine to the domain, using Active Directory Users and Computers (ADUC) to create an Organizational Unit, create users and practice log ins.
+This project shows the installation of Active Directory Domian in a cloud enviornment. It walks through the steps of joining the Virtual Machine to the domain, using Active Directory Users and Computers (ADUC) to create Organizational Units and users.
 
 
 <h2>Technologies/Environments Used</h2>
@@ -139,7 +139,7 @@ Logging in as new user: bot.vug
 
 
 ## What I Learned
-Once the server is promoted to a Domain Controller, it changes how users authenticate within the environment. Now users can sign on and be local users, or sign on as domain users. It becomes necessary when you log in to specify how you want to interact with the domain. 
+Once the server is promoted to a Domain Controller, it changes how users authenticate within the environment. Now users can sign on and be local users, or sign on as domain users.
 Group Policy is a great tool to control many many specific attributes and rules for a collection of computers on a domain. 
 
 <h2>⏭️Next Steps</h2>
