@@ -135,10 +135,9 @@ Example user:
 Logging in as new user: bot.vug
 
 
+
+
 <img width="1920" height="1080" alt="18login as new user" src="https://github.com/user-attachments/assets/62c72f24-1291-4832-90dc-ed435e6e9bf4" />
-
-
-
 
 
 
@@ -152,7 +151,7 @@ Logging in as new user: bot.vug
 
 ## What I Learned
 Once the server is promoted to a Domain Controller, it changes how users authenticate within the environment. Now users can sign on and be local users, or sign on as domain users. It becomes necessary when you log in to specify how you want to interact with the domain. 
-There are a seemingly infinite amount of things you can enable and disable in Group Policy Management. 
+Group Policy is a great tool to control many many specific attributes and rules for a collection of computers on a domain. 
 
 <h2>⏭️Next Steps</h2>
 
