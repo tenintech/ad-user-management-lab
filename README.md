@@ -76,11 +76,17 @@ Create the following Organizational Units (OU):
   
 Add user to _ADMINS OU 
 User Name: Jane Doe 
+<img width="1289" height="869" alt="10 create user in ADUC" src="https://github.com/user-attachments/assets/5351520b-bf57-45c0-ae62-f10dc6929f5b" />
+
+
+<br />
 
 Make User an Admin user adding user to built in admin security group "Domain Admins"
+
+<br />
 <img width="1113" height="372" alt="11adding user to built in domain admins sec group" src="https://github.com/user-attachments/assets/c1bccb9e-b9bd-4f68-8ded-3dc9e9493fb6" />
 
-<img width="1289" height="869" alt="10 create user in ADUC" src="https://github.com/user-attachments/assets/5351520b-bf57-45c0-ae62-f10dc6929f5b" />
+
 
 
 <hr />
@@ -111,14 +117,27 @@ Navigate to the Organizational Unit:
 _EMPLOYEES
 
 Open Powershell and use a script to Create several test users to simulate a real company environment.
+Notice path of script.
+
+
+<img width="1755" height="908" alt="17using powershell to create users" src="https://github.com/user-attachments/assets/56175b86-efa4-474d-833c-112639062b22" />
+
 
 Example user:
 - bot.vug
 
+Logging in as new user: bot.vug
+
+
+<img width="1920" height="1080" alt="18login as new user" src="https://github.com/user-attachments/assets/62c72f24-1291-4832-90dc-ed435e6e9bf4" />
 
 Verify the users appear in the OU.
 
-<img width="1755" height="908" alt="17using powershell to create users" src="https://github.com/user-attachments/assets/9a7056c1-c6d2-49f1-ad24-1b585755578a" />
+
+
+
+
+
 
 <hr />
 
