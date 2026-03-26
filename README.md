@@ -31,15 +31,13 @@ This project shows the installation of Active Directory on the Domain Server. It
 
 <h3>1. Install Active Directory Domain Services onto the Domain Controller</h3>
 
-Open Server Manager on the Domain Controller and install AD DS.
-Promote Server to Domain Controller
+Installed Active Directory Domain Services (AD DS) and promoted the server to a Domain Controller using Server Manager.
 
 Configuration:
 - Virtual Machine Name: DC1
 - Image: Windows Server 2025
 - Virtual Network: Same network that will be used by the client machine
 
-<img width="1567" height="905" alt="1using server manager to add roles and features" src="https://github.com/user-attachments/assets/6488dae0-df73-424a-bb89-20e2e548e887" />
 <img width="1361" height="611" alt="2choose server" src="https://github.com/user-attachments/assets/c8863979-0800-491b-84f1-5738eee5efcb" />
 
 
@@ -67,12 +65,7 @@ Configuration:
 
 <h3>3. Create a Domain Admin user within the domain</h3>
 
-Open up Active Directory Users and Computers(ADUC) and create 2 Organizational Units (OU)
-
-Create the following Organizational Units (OU):
-
-- _EMPLOYEES
-- _ADMINS
+Created Organizational Units (_EMPLOYEES, _ADMINS) and provisioned users using ADUC.
   
 Add user to _ADMINS OU 
 User Name: Jane Doe 
