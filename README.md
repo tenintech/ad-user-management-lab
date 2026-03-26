@@ -122,6 +122,12 @@ Notice path of script.
 
 <img width="1755" height="908" alt="17using powershell to create users" src="https://github.com/user-attachments/assets/56175b86-efa4-474d-833c-112639062b22" />
 
+Verify the users appear in the OU.
+
+<img width="549" height="425" alt="uses in employees ou" src="https://github.com/user-attachments/assets/23c93407-2c02-44a0-9714-4c09aae8469c" />
+
+
+
 
 Example user:
 - bot.vug
@@ -131,7 +137,7 @@ Logging in as new user: bot.vug
 
 <img width="1920" height="1080" alt="18login as new user" src="https://github.com/user-attachments/assets/62c72f24-1291-4832-90dc-ed435e6e9bf4" />
 
-Verify the users appear in the OU.
+
 
 
 
