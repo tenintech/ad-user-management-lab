@@ -77,7 +77,7 @@ User Name: Jane Doe
 
 <br />
 
-Made "Jane Doe" an Admin user adding to built in admin security group "Domain Admins"
+Made "Jane Doe" an Admin user adding to Built-In Admin Security Group "Domain Admins"
 
 <br />
 <img width="1113" height="372" alt="11adding user to built in domain admins sec group" src="https://github.com/user-attachments/assets/c1bccb9e-b9bd-4f68-8ded-3dc9e9493fb6" />
