@@ -88,8 +88,8 @@ Made "Jane Doe" an Admin user adding to built in admin security group "Domain Ad
 
 <h3>4. Join Client1 to the Domain</h3>
 
-Logged into Client1 (VM) and in System Settings made a member of domain.local 
-Verified that user is visible in the domain in Computers 
+Logged into Client1 (VM) and in System Settings created a member of domain.local 
+Verified that user is visible in the domain Computers Folder.
 
 
 <img width="1920" height="966" alt="12making client1 member of domain" src="https://github.com/user-attachments/assets/0a78a265-70d2-4030-8ea2-824dcef27713" />
