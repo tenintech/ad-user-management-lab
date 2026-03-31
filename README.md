@@ -92,6 +92,7 @@ Made "Jane Doe" an Admin user adding to Built-In Admin Security Group "Domain Ad
 <h3>4. Join Client1 to the Domain</h3>
 
 Logged into Client1 (VM) and in System Settings created a member of domain.local 
+
 Verified that user is visible in the domain Computers Folder.
 
 
