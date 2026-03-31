@@ -105,7 +105,7 @@ This demonstrates a working Active Directory domain environment with a connected
 <h3>5. Create Additional Domain Users</h3>
 
 
-Opened Powershell used a script to automatically Create several test users to simulate a real company environment.
+Opened Powershell and used a script to automatically create several test users to simulate a real company environment.
 Notice path of script.
 
 
