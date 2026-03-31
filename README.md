@@ -17,6 +17,8 @@ This project shows the installation of Active Directory Domian in a cloud envior
   
   - Active Directory Domain Services (AD DS)
   
+  - Active Directory Users and Computers (ADUC) 
+  
   - Remote Desktop (RDP)
   
   - PowerShell
