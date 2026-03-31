@@ -93,7 +93,7 @@ Made "Jane Doe" an Admin user adding to Built-In Admin Security Group "Domain Ad
 
 Logged into Client1 (VM) and in System Settings created a member of domain.local 
 
-Verified that user is visible in the domain Computers Folder.
+Verified that the users machine is visible in the domain Computers Folder.
 
 
 <img width="1920" height="966" alt="12making client1 member of domain" src="https://github.com/user-attachments/assets/0a78a265-70d2-4030-8ea2-824dcef27713" />
