@@ -70,6 +70,7 @@ Configuration:
 Created Organizational Units (_EMPLOYEES, _ADMINS) and provisioned users using ADUC.
   
 Add user to _ADMINS OU 
+
 User Name: Jane Doe 
 <img width="1289" height="869" alt="10 create user in ADUC" src="https://github.com/user-attachments/assets/5351520b-bf57-45c0-ae62-f10dc6929f5b" />
 
